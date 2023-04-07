@@ -23,7 +23,7 @@
   "author": "Fullstack Academy",
   "devDependencies": {
     "eslint": "^7.25.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.22"
   },
   "dependencies": {
     "axios": "^0.19.2",
