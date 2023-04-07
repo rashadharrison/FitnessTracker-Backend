@@ -16,7 +16,7 @@ jobs:
 
       - name: Merge Dependabot security updates
         run: |
-          if [[ ${{ github.event.pull_request.user.login }} == "dependabot[bot]" ]] && [[ ${{ github.event.pull_request.labels }} =~ "security" || ${{ github.even.pull_requests.ladels }} =~ "dependencies]]; then
+          if [[ ${{ github.event.pull_request.user.login }} == "dependabot[bot]" ]] && [[ ${{ github.event.pull_request.labels }} =~ "security" || ${{ github.event.pull_requests.labels }} =~ "dependencies]]; then
             echo "Merging pull request from Dependabot..."
             git fetch origin ${{ github.event.pull_request.head.ref }}:${{ github.event.pull_request.head.ref }}
             git merge --no-commit --no-ff origin/${{ github.event.pull_request.head.ref }}
